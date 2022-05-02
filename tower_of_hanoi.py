@@ -1,3 +1,6 @@
+import time
+
+
 def num_steps(n):
     start = 7
     for i in range(n-3):
@@ -14,6 +17,6 @@ def TowerOfHanoi(n, source, destination, middle):
     TowerOfHanoi(n - 1, middle, destination, source)
 
 
-disks = 20
-print(num_steps(disks))
+disks = 32
 TowerOfHanoi(disks, "A", "C", "B")
+print(num_steps(disks))

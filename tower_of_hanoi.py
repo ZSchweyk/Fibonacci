@@ -17,6 +17,6 @@ def TowerOfHanoi(n, source, destination, middle):
     TowerOfHanoi(n - 1, middle, destination, source)
 
 
-disks = 32
+disks = 16
 TowerOfHanoi(disks, "A", "C", "B")
 print(num_steps(disks))
